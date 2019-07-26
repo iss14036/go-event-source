@@ -12,3 +12,7 @@ func (u *Ship) GetName() string {
 func (u *Ship) GetLocation() string {
 	return u.Location
 }
+
+func (u *Ship) String() string {
+	return "(" + u.Name + " " + u.Location + ")"
+}
