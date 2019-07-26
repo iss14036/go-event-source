@@ -1,14 +1,14 @@
 package model
 
 type Ship struct {
-	name     string
-	location string
+	Name     string
+	Location string
 }
 
 func (u *Ship) GetName() string {
-	return u.name
+	return u.Name
 }
 
 func (u *Ship) GetLocation() string {
-	return u.location
+	return u.Location
 }
