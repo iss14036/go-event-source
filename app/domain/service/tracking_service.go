@@ -11,3 +11,9 @@ func recordArrival(ship *model.Ship, port string) {
 	arrivalShipping := event.ArrivalShipping{Occured: "12-12-21", Recorded: "Today", Ship: ship, Port: port}
 	fmt.Println(arrivalShipping)
 }
+
+func recordDeparture(ship *model.Ship, port string) {
+	ship.Location = port
+	departureShipping := event.DepartureShipping{Occured: "12-12-21", Recorded: "Today", Ship: ship, Port: port}
+	fmt.Println(departureShipping)
+}
