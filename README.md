@@ -10,6 +10,12 @@ Let's consider a simple example to do with shipping notifications. In this examp
 
 ![Github Logo](https://martinfowler.com/eaaDev/eventSourcing/simpleService.gif)
 
+In this case when the service is called, it finds the relevant ship and updates its location. The ship objects record the current known state of the ships.
+
+Introducing Event Sourcing adds a step to this process. Now the service creates an event object to record the change and processes it to update the ship.
+
+![Github Logo](https://martinfowler.com/eaaDev/eventSourcing/simpleEventCd.gif)
+
 ## Dependencies
 In this time, I use mac as an os to running the system.
 
